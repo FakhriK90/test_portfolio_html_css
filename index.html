@@ -5,16 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/7fd9dbc9fc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7fd9dbc9fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="porfolio.js"></script>
   </head>
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="#">My portfolio</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+
   <body>
     <div class="hero__section">
       <div class="hero__wrapper">
         <div class="column__left">
-          <span class="deepshadow"><i class="fa-solid fa-dice"></i> Fakhri Abousaoud Kahouach</span>
+          <span class="deepshadow"
+            ><i class="fa-solid fa-dice"></i> Fakhri Abousaoud Kahouach</span
+          >
           <h1>Développeur Web Full-Stack</h1>
           <p>
-            Actuellement, avec quelques mois d'expérience en tant que développeur freelance, je suis à la recherche de meilleurs opportunitées.
+            Actuellement, avec quelques mois d'expérience en tant que
+            développeur freelance, je suis à la recherche de meilleurs
+            opportunitées.
           </p>
         </div>
         <div class="column__right">
@@ -23,18 +55,21 @@
       </div>
     </div>
     <!-- About Section -->
-    <div class="main__section">
+    <div class="main__section" id="about">
       <div class="main__container">
         <h1>Salut, c'est moi Fakhri!</h1>
         <div class="main__content">
           <div class="main__text">
             <h2>
-              Je suis Fakhri Kahouach, je suis développeur Full-Stack travaillant en freelance.
-               Actuellement j'habite à Gafsa en Tunisie.
+              Je suis Fakhri Kahouach, je suis développeur Full-Stack
+              travaillant en freelance. Actuellement j'habite à Gafsa en
+              Tunisie.
             </h2>
             <p>
-              Je suis géologue des réservoirs de formation et en 2021 j'obtenu mon certificat en Full-Stack JavaScript à GoMyCode.
-              Mon intérét est tourné surtout vers le UI/UX design.
+              Je suis technicien supérieur en géologie des réservoirs diplomé
+              depuis 2017 et en 2021 j'obtenu mon certificat en Full-Stack
+              JavaScript à GoMyCode. Mon intérét est tourné surtout vers le
+              UI/UX design.
             </p>
           </div>
           <div class="main__image">
@@ -43,109 +78,140 @@
         </div>
       </div>
     </div>
-    <!-- Services Section -->
-    <div class="services">
-      <div class="services__container">
-        <h1>Services</h1>
-        <div class="services__grid">
-          <div class="services__left">
-            <div class="services__content">
-              <img src="./images/chess.svg" alt="chess piece" />
-              <div class="services__desc">
-                <h2>UX Strategy</h2>
-                <p>
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in some form, by injected humour, or randomised
-                  words.
-                </p>
-              </div>
-            </div>
-            <div class="services__content">
-              <img src="./images/wireframe.svg" alt="chess piece" />
-              <div class="services__desc">
-                <h2>websites and web apps</h2>
-                <p>
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in some form, by injected humour, or randomised
-                  words which don't look even slightly believable.
-                </p>
-              </div>
-            </div>
-            <div class="services__content">
-              <img src="./images/virtual.svg" alt="chess piece" />
-              <div class="services__desc">
-                <h2>Mobile Apps</h2>
-                <p>
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in some form.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="services__right">
-            <img src="./images/Macbook.png" alt="macbook" class="macbook" />
-          </div>
-        </div>
-      </div>
-      <div class="yellow__bar">
-        <img src="./images/mail.svg" alt="email icon" />
-        <p>Email</p>
-        <span>robert-01@info.com</span>
-      </div>
-    </div>
+
     <!-- Portfolio -->
-    <div class="portfolio">
-      <div class="portfolio__container">
-        <h1>Portfolio</h1>
-        <div class="portfolio__main">
-          <div class="portfolio__left">
+    <div class="portfolio_section" id="portfolio">
+      <div class="case-study-gallery">
+        <h1 class="title">Portfolio</h1>
+        <div class="case-study">
+          <figure>
             <img
-              src="./images/portfolio-img.svg"
-              alt="dashboard"
-              class="portfolio__img"
+              class="case-study__img"
+              src="./images/pexels-photo-4974912.jpeg"
+              alt=""
             />
-          </div>
-          <div class="portfolio__right">
-            <h2>Web App for Company XYZ</h2>
-            <p>
-              Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't
-              look even slightly believable.
-            </p>
-            <a href="#">See more ></a>
+          </figure>
+          <div class="case-study__overlay">
+            <h2 class="case-study__title">Title</h2>
+            <a class="case-study__link" href="#">Link</a>
           </div>
         </div>
-        <div class="portfolio__projects">
-          <img src="./images/portfolio1.svg" alt="portfolio" />
-          <img src="./images/portfolio2.svg" alt="portfolio" />
-          <img src="./images/portfolio3.svg" alt="portfolio" />
+        <div class="case-study">
+          <figure>
+            <img
+              class="case-study__img"
+              src="./images/pexels-photo-4974912.jpeg"
+              alt=""
+            />
+          </figure>
+          <div class="case-study__overlay">
+            <h2 class="case-study__title">Title</h2>
+            <a class="case-study__link" href="#">Link</a>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Contact -->
-    <div class="contact">
-      <div class="contact__bar">
-        <img src="./images/mail.svg" alt="email icon" />
-        <p>Email</p>
-        <span>robert-01@info.com</span>
-      </div>
-      <h1>Contact Me</h1>
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer__container">
-        <div class="footer__left">
-          <h2>Robert Atkinsons</h2>
-          <p>
-            Some copyright text ipsum available, but the majority have suffered
-            alteration in some form.
-          </p>
+        <div class="case-study">
+          <figure>
+            <img
+              class="case-study__img"
+              src="./images/pexels-photo-4974912.jpeg"
+              alt=""
+            />
+          </figure>
+          <div class="case-study__overlay">
+            <h2 class="case-study__title">Title</h2>
+            <a class="case-study__link" href="#">Link</a>
+          </div>
         </div>
-        <div class="footer__right">
-          <a href="#">About</a> <a href="#">Services</a>
-          <a href="#">Portfolio</a> <a href="#">Contacts</a>
+        <div class="case-study">
+          <figure>
+            <img
+              class="case-study__img"
+              src="./images/pexels-photo-4974912.jpeg"
+              alt=""
+            />
+          </figure>
+          <div class="case-study__overlay">
+            <h2 class="case-study__title">Title</h2>
+            <a class="case-study__link" href="#">Link</a>
+          </div>
         </div>
       </div>
     </div>
   </body>
+
+  <!--Some of this HTML is directly from Pavilion.  You can change it to whatever you want if you want to mimic this design.-->
+  <footer class="flex-rw">
+    <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+        CONNECT <span class="footer-social-small">with</span> ME
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+        <a
+          href="https://www.pinterest.com/paviliongift/"
+          class="generic-anchor"
+          target="_blank"
+          title="Pinterest"
+          itemprop="significantLink"
+          ><i class="fa-brands fa-linkedin-in"></i></a>
+        <a
+          href="https://www.facebook.com/paviliongift"
+          class="generic-anchor"
+          target="_blank"
+          title="Facebook"
+          itemprop="significantLink"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          href="https://twitter.com/PavilionGiftCo"
+          class="generic-anchor"
+          target="_blank"
+          title="Twitter"
+          itemprop="significantLink"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a
+          href="http://instagram.com/paviliongiftcompany"
+          class="generic-anchor"
+          target="_blank"
+          title="Instagram"
+          itemprop="significantLink"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg"
+          class="generic-anchor"
+          target="_blank"
+          title="Youtube"
+          itemprop="significantLink"
+          ><i class="fa fa-youtube"></i
+        ></a>
+        <a
+          href="https://plus.google.com/+Paviliongift/posts"
+          class="generic-anchor"
+          target="_blank"
+          title="Google Plus"
+          itemprop="significantLink"
+          ><i class="fa fa-google-plus"></i
+        ></a>
+      </span>
+    </section>
+    <section class="footer-bottom-section flex-rw">
+      <div class="footer-bottom-wrapper">
+        <i class="fa fa-copyright" role="copyright"> </i> 2019 Pavilion in
+        <address class="footer-address" role="company address">
+          Bergen, NY
+        </address>
+        <span class="footer-bottom-rights"> - All Rights Reserved - </span>
+      </div>
+      <div class="footer-bottom-wrapper">
+        <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow"
+          >Terms</a
+        >
+        |
+        <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow"
+          >Privacy</a
+        >
+      </div>
+    </section>
+  </footer>
 </html>
