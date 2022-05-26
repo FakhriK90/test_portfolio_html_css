@@ -827,3 +827,52 @@ footer {
     font-size: 1.3em;
  }
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+#skill{
+  overflow: hidden;
+   background: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470);
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-transform: perspective(900px);
+  -webkit-transform-style: preserve-3d;
+}
+.card {
+  text-align:center;
+  left: 100px;
+  width: 250px;
+  height: 350px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.411);
+  transition:.6s;
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+}
+.card:hover{
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card img{
+  transform: translateY(15px);
+  width:200px;
+  height:120px;
+}
+h3{
+  margin-top: 3rem;
+  font-size:25px;
+  font-weight: bolder;
+  font-family: 'Abel', sans-serif;
+  color:rgba(19, 19, 19, 0.89);
+  text-shadow: 0 0 2px rgb(255,255,255);
+  transform: translatey(10px);
+}
+
