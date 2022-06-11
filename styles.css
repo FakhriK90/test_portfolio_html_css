@@ -13,11 +13,13 @@
 
 
 /* Navbar*/
+
 .nav {
   height: 100px;
   width: 100%;
   background-color: #000000;
   position: fixed;
+  z-index: 1;
 }
 
 .nav > .nav-header {
@@ -69,7 +71,7 @@
 
 .affix {
   padding: 0;
-  background-color: rgba(17, 17, 17, 0.61);
+  background-color: rgba(0, 0, 0, 0.849);
 }
 
 @media (max-width:900px) {
