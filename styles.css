@@ -14,7 +14,7 @@
 
 /* Navbar*/
 .nav {
-  height: 60px;
+  height: 100px;
   width: 100%;
   background-color: #000000;
   position: fixed;
@@ -29,7 +29,6 @@
   width: auto;
   height: auto;
   padding-left: 2rem;
-  margin-top: 12px;
 }
 
 .nav div.logo a {
@@ -45,7 +44,7 @@
 }
 
 .nav > .nav-links {
-  margin-top: 5px;
+  margin-top: 22px;
   display: inline;
   float: right;
   font-size: 1.3rem;
@@ -633,7 +632,11 @@ h4.deepshadow {
 
 #skill{
   overflow: hidden;
-   background: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470);
+   background: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470) no-repeat center center fixed;
+   -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .skills{
   display: flex;
@@ -651,7 +654,7 @@ h4.deepshadow {
   margin-bottom: 8px;
   background: rgba(255, 255, 255, 0.411);
   transition:.6s;
-  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  transform: rotatex(50deg) translatey(-200px) translatez(-100px);
   box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
 }
 .card:hover{
@@ -665,6 +668,55 @@ h4.deepshadow {
   width:200px;
   height:120px;
 }
+
+.card2 {
+  text-align:center;
+  left: 100px;
+  width: 250px;
+  height: 350px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.411);
+  transition:.6s;
+  transform: rotatex(60deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+}
+.card2:hover{
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card2 img{
+  transform: translateY(15px);
+  width:200px;
+  height:120px;
+}
+
+.card3 {
+  text-align:center;
+  left: 100px;
+  width: 250px;
+  height: 350px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.411);
+  transition:.6s;
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+}
+.card3:hover{
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card3 img{
+  transform: translateY(15px);
+  width:200px;
+  height:120px;
+}
+
 h3{
   margin-top: 3rem;
   font-size:25px;
@@ -674,4 +726,3 @@ h3{
   text-shadow: 0 0 2px rgb(255,255,255);
   transform: translatey(10px);
 }
-

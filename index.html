@@ -17,7 +17,7 @@
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
         <div class="logo">
-          <a href="#home"><i class="fa-solid fa-briefcase"></i> My portfolio</a>
+          <img src="./images/Portfolio.png" style="width: 6rem" alt="" />
         </div>
       </div>
       <div class="nav-btn">
@@ -27,29 +27,41 @@
           <span></span>
         </label>
       </div>
-
       <div class="nav-links">
-        <a href="#about">About</a>
+        <a href="#about" class="text1"></a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#skill">Skills</a>
+        <a href="#skill" class="text2"></a>
         <a href="#contact">Contact</a>
+        <select
+          style="
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            padding: 5px 4px 2px 2px;
+            background-color: rgba(0, 0, 0, 0.651);
+            color: white;
+            border: 30%;
+            cursor: pointer;
+            text-align: center;
+          "
+        >
+          <option value="en" selected>En</option>
+          <option value="fr">Fr</option>
+        </select>
       </div>
     </div>
   </header>
 
   <body>
+    <!-- Home Section -->
     <div class="hero__section" id="home">
       <div class="hero__wrapper">
         <div class="column__left">
           <span class="deepshadow"
             ><i class="fa-solid fa-dice"></i> Fakhri Abousaoud Kahouach</span
           >
-          <h1>Développeur Web Full-Stack</h1>
-          <p>
-            Actuellement, avec quelques mois d'expérience en tant que
-            développeur freelance, je suis à la recherche de meilleurs
-            opportunitées.
-          </p>
+          <h1 class="text3"></h1>
+          <p class="text4"></p>
         </div>
         <div class="column__right">
           <img src="/images/ai-brain.svg" alt="brain" class="hero__img" />
@@ -59,20 +71,11 @@
     <!-- About Section -->
     <div class="main__section" id="about">
       <div class="main__container">
-        <h1>Salut, c'est moi Fakhri!</h1>
+        <h1 class="text5"></h1>
         <div class="main__content">
           <div class="main__text">
-            <h2>
-              Je suis Fakhri Kahouach, je suis développeur Full-Stack
-              travaillant en freelance. Actuellement j'habite à Gafsa en
-              Tunisie.
-            </h2>
-            <p>
-              Je suis technicien supérieur en géologie des réservoirs diplomé
-              depuis 2017 et en 2021 j'obtenu mon certificat en Full-Stack
-              JavaScript à GoMyCode. Mon intérét est tourné surtout vers le
-              UI/UX design.
-            </p>
+            <h2 class="text6"></h2>
+            <p class="text7"></p>
           </div>
           <div class="main__image">
             <img src="./images/Moi.jpg" alt="face" class="main__img" />
@@ -162,7 +165,7 @@
     <!-- Skills -->
     <!-- From Karim Jawhar -->
     <section id="skill">
-      <h4 class="deepshadow">Skills</h4>
+      <h4 class="deepshadow" id="skills"></h4>
       <div class="skills">
         <div class="card">
           <img style="height: 200px" src="./images/HTML logo.png" alt="" />
@@ -174,16 +177,31 @@
         </div>
         <div class="card">
           <img style="height: 200px" src="./images/Mongo-db_logo.png" alt="" />
-          <h3>Mongo db</h3>
+          <h3>Mongo DB</h3>
         </div>
         <div class="card">
           <img style="height: 200px" src="./images/Node JS.png" alt="" />
           <h3>Node JS</h3>
         </div>
-        <div class="card">
+        <div class="card2">
           <img style="height: 200px" src="./images/MUI_logo.png" alt="" />
           <h3>Material UI</h3>
         </div>
+        <div class="card2">
+          <img style="height: 200px" src="./images/Bootstrap_logo.png" alt="" />
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="card2">
+          <img style="height: 200px" src="./images/SUI_logo.png" alt="" />
+          <h3>Semantic UI</h3>
+        </div>
+        <div class="card2">
+          <img style="height: 200px" src="./images/Bulma_logo.png" alt="" />
+          <h3>Bulma CSS</h3>
+        </div>
+        <div class="card3">
+          <img style="height: 200px" src="./images/Materialize_logo.png" alt="" />
+          <h3>Materialize</h3>
       </div>
     </section>
   </body>
@@ -191,14 +209,13 @@
   <!--Some of this HTML is directly from Pavilion.  You can change it to whatever you want if you want to mimic this design.-->
   <footer class="flex-rw" id="contact">
     <div class="footer-social-section flex-rw">
-      <span class="footer-social-overlap footer-social-connect">
-        CONNECT <span class="footer-social-small">with</span> ME
+      <span id="text8" class="footer-social-overlap footer-social-connect">
+        
       </span>
       <span class="footer-social-overlap footer-social-icons-wrapper">
         <a
           href="https://www.linkedin.com/in/fakhri-abousaoud-kahouach-162171166/"
           class="generic-anchor"
-          target="_blank"
           title="Pinterest"
           itemprop="significantLink"
           ><i class="fa-brands fa-linkedin-in"></i
@@ -231,11 +248,11 @@
     </div>
     <div class="footer-bottom-section flex-rw">
       <div class="footer-bottom-wrapper">
-        <i class="fa fa-copyright" role="copyright"> </i> 2022 in
+        <i class="fa fa-copyright" role="copyright"> </i> 2022 
         <address class="footer-address" role="company address">
           Gafsa, Tunisie
         </address>
-        <span class="footer-bottom-rights"> - All Rights Reserved - </span>
+        <span class="footer-bottom-rights" id="text9"></span>
       </div>
     </div>
   </footer>
